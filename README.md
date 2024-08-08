@@ -15,3 +15,7 @@ Este projeto é um site promocional para a CCXP 2022, desafio do curso de Produc
 - **HTML**
 - **CSS**
 - **JavaScript**
+
+## Confira no Link Abaixo
+
+www.brenowhodesafioccxp2022.netlify.app/
