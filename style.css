@@ -1,0 +1,202 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração do body e html */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+/* Estilo do header */
+header {
+    background-color: #FFD900;
+    display: grid;
+    padding: 20px;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+/* Estilo do body */
+body {
+    padding-top: 70px; /* Ajuste conforme a altura do header para evitar sobreposição de conteúdo */
+    background: linear-gradient(to bottom right, #161616, #514988); /* Degradê do amarelo ao azul */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o contêiner */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: #FFF; /* Cor do texto */
+    font-family: Verdana, sans-serif;
+}
+
+/* Estilo do main */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px; /* Adiciona margem no topo para separar do header */
+    position: relative; /* Necessário para o posicionamento do overlay */
+    width: 100%;
+    max-width: 1200px; /* Define uma largura máxima para centralizar o conteúdo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo do overlay e video */
+.overlay {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.videoContainer {
+    text-align: center;
+    color: #E33881;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os elementos do timer */
+    color: #d9d9d9;
+    padding: 5px 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3); /* Fundo semitransparente preto */
+    align-items: center;
+    margin-left: 20px;
+}
+
+.textoTimer {
+    font-size: 20px;
+}
+
+.timer-item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o número e o rótulo */
+}
+
+.timer-item h1 {
+    margin: 0;
+    font-size: 46px;
+}
+
+.timer-item p {
+    font-size: 46px;
+    font-weight: bold;
+    color: #FFD900;
+    margin-left: 5px; /* Espaço entre o número e o rótulo */
+}
+
+video {
+    width: 100%; /* Faz com que o vídeo ocupe toda a largura disponível */
+    height: auto; /* Mantém a proporção do vídeo */
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Estilo do conteúdo */
+.conteudo {
+    background-color: #514988;
+    border-radius: 25px;
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    height: auto; /* Ajusta a altura automaticamente */
+    color: #FFF;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteudo h1 {
+    color: #FFD900;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.conteudo h3 {
+    font-size: 20px;
+    margin: 30px;
+}
+
+.conteudo p {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Estilo do texto principal */
+.texto {
+    margin: 20px auto;
+    color: #FFD900;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo do container dos tickets */
+.container {
+    display: flex;  
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço suficiente */
+    justify-content: center; /* Centraliza os itens */
+    width: 90%;
+    max-width: 1200px; /* Define uma largura máxima para centralizar o conteúdo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo dos tickets */
+.tickets {
+    margin: 10px;
+}
+
+.tickets img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease; /* Transição suave para o efeito */
+}
+
+.tickets img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% */
+}
+
+/* Estilo do botão */
+button {
+    border: none;
+    border-radius: 20px;
+    width: 500px;
+    height: 120px;
+    color: #FFF;
+    background-color: #D3085A;
+    font-weight: bold;
+    font-size: 34px;
+    cursor: pointer;
+    margin: 30px auto; /* Centraliza o botão */
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transições suaves para o efeito */
+}
+
+button:hover {
+    background-color: #FFD900;
+    color: #484077;
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+}
+
+/* Estilo do footer */
+footer {
+    height: 50px;
+}
